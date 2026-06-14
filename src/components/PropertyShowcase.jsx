@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { properties } from '../data/mockData';
-import { ArrowRight, BedDouble, Square, Check } from 'lucide-react';
+import { ArrowRight, BedDouble, Square } from 'lucide-react';
 
 export default function PropertyShowcase({ onEnquireClick, onViewAllProperties }) {
   const [activeTab, setActiveTab] = useState('United Arab Emirates');

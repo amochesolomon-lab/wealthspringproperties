@@ -1,4 +1,3 @@
-import React from 'react';
 import { documentationStandards } from '../data/mockData';
 import { ShieldCheck, ArrowRight } from 'lucide-react';
 

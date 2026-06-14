@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { articles } from '../data/mockData';
 import { Calendar, Tag, ArrowRight } from 'lucide-react';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroSlider from '../components/HeroSlider';
 import PropertySearch from '../components/PropertySearch';
 import AboutSection from '../components/AboutSection';

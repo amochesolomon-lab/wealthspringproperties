@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { X, Mail, Phone, MapPin, CheckCircle } from 'lucide-react';
 
 export default function EnquireModal({ isOpen, onClose }) {
-  if (!isOpen) return null;
-
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -12,6 +10,8 @@ export default function EnquireModal({ isOpen, onClose }) {
     message: ''
   });
   const [submitted, setSubmitted] = useState(false);
+
+  if (!isOpen) return null;
 
   const handleSubmit = (e) => {
     e.preventDefault();

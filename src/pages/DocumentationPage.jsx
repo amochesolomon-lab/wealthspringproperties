@@ -1,6 +1,5 @@
-import React from 'react';
 import { documentationStandards } from '../data/mockData';
-import { ShieldCheck, FileText, CheckCircle } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 export default function DocumentationPage({ onEnquireClick }) {
   return (

@@ -1,4 +1,3 @@
-import React from 'react';
 import { awards } from '../data/mockData';
 
 export default function AwardsSection() {

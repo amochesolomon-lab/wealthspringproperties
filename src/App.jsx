@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import EnquireModal from './components/EnquireModal';
@@ -43,6 +43,7 @@ function App() {
       case 'properties':
         return (
           <PropertiesPage 
+            key={JSON.stringify(filterOptions)}
             filterOptions={filterOptions} 
             setFilterOptions={setFilterOptions}
             onEnquireClick={() => setEnquireModalOpen(true)} 

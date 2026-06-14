@@ -1,4 +1,3 @@
-import React from 'react';
 import { teamMembers } from '../data/mockData';
 import { siteConfig } from '../data/siteConfig';
 

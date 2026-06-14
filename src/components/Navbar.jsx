@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X, Globe } from 'lucide-react';
 
 export default function Navbar({ currentPage, setCurrentPage, onEnquireClick, setFilterOptions }) {

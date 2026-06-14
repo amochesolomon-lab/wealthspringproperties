@@ -1,20 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { properties } from '../data/mockData';
 import { Square, ArrowRight, MapPin } from 'lucide-react';
 
 export default function PropertiesPage({ filterOptions, setFilterOptions, onEnquireClick }) {
-  const [localFilters, setLocalFilters] = useState({
+  const [localFilters, setLocalFilters] = useState(filterOptions || {
     location: 'Any',
     type: 'Any',
     priceRange: 'Any'
   });
-
-  // Sync with incoming filterOptions from app state
-  useEffect(() => {
-    if (filterOptions) {
-      setLocalFilters(filterOptions);
-    }
-  }, [filterOptions]);
 
   const handleFilterChange = (key, value) => {
     const updated = { ...localFilters, [key]: value };
